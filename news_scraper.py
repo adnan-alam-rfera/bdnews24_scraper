@@ -10,7 +10,6 @@ except ImportError as e:
     logging.info("selenium not installed! Installing it...")
     subprocess.call(["pip", "install", "selenium"])
     logging.info("selenium installed. Please re run the script.")
-    sys.exit(1)
 
 try:
     import pandas as pd
@@ -18,7 +17,6 @@ except ImportError as e:
     logging.info("pandas not installed! Installing it...")
     subprocess.call(["pip", "install", "pandas"])
     logging.info("pandas installed. Please re run the script.")
-    sys.exit(1)
 
 try:
     import xlsxwriter
